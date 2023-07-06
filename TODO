@@ -1,0 +1,22 @@
+Done
+    - Formation information
+    - Experiance information
+    - About information
+    - Skills information
+    - Testimonials information
+    - Contact information
+    - Creating Dashboard
+	- Use reCaptch in contact form
+    - Add my website
+	- Activate contact part
+    - Settings for Logo, Website name, admin infos
+    - Portfolio information
+    - Automating the information of the page "http://127.0.0.1:8000" and dashboard as mentioned in .env file
+    - Autocreating of project detail
+    - Facts information
+    - Génération de version statique pour l'héberger facilement: >php artisan generate:static
+    
+Before: 709 Lines -> 505
+    - Il me reste les traveaux de web scrapping
+Bugs
+    - Values of 'select' in forms are not selected automatic in 

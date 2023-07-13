@@ -4,22 +4,22 @@ This repository contains a generator that can be used to create a static website
 
 ## How to clone and install the necessary tools
 
-1. Download the repository and unzip it:
+1. Download the repository and unzip it:  
 `https://github.com/CHERIEF-Dz/Laravel-Portfolio-Generator`
 
-2. Go to the project directory and install the dependencies using the following command:
+2. Go to the project directory and install the dependencies using the following command:  
 `composer install`
 
 
 3. Open `.env` file and update the database and personal information.
 
-4. Run the migrations using the following command:
+4. Run the migrations using the following command:  
 `php artisan migrate`
 
 
 ## How to generate the static website
 
-1. Run the following command to generate the static website:
+1. Run the following command to generate the static website:  
 `php artisan generate:portfolio`
 
 

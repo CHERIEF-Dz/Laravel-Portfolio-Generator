@@ -16,7 +16,11 @@ Done
     - Facts information
     - Génération de version statique pour l'héberger facilement: >php artisan generate:static
     
-Before: 709 Lines -> 505
+Before:
     - Il me reste les traveaux de web scrapping
+    - Github:
+        - remplir Readme
+        - définir une méthode de déploiement
+        - Configurer les workflows nécéssaires
 Bugs
     - Values of 'select' in forms are not selected automatic in 

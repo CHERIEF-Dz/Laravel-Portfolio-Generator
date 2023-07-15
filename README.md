@@ -23,14 +23,27 @@ Follow this video if you haven't composer on your computer
 4. Run the migrations using the following command:  
 `php artisan migrate`
 
+5. Open a cmd command line in the directory and switch on the server:
+`php artisan serve`
+
+6. Go to `127.0.0.1:8000` to view the results
+
+7. You can add, remove and update the elements of the index by going to `127.0.0.1:8000/admin`
 
 ## How to generate the static website
 
-1. Run the following command to generate the static website:  
-`php artisan generate:portfolio`
+1. Open new cmd in the directory and switch on the server:
+`php artisan serve`
+
+2. Open other cmd and run the following command to generate the static website:  
+`php artisan generate:static`
 
 
-2. The static website will be generated in the `public` directory.
+3. The static website will be generated in the `static` directory.
+
+4. Copy assets and put them in the `static` directory.
+
+Congrats!! Now you can deploy your personal website any where in any webhost.
 
 ## Remarks
 

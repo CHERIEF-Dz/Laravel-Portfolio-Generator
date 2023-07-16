@@ -5,31 +5,43 @@ This repository contains a generator that can be used to create a static website
 ## Requirements
 
 1. Install `wampserver` or `XAMPP`
-`https://www.wampserver.com/en/download-wampserver-64bits/`
+```markdown
+https://www.wampserver.com/en/download-wampserver-64bits/
+```
 
 
 2. Install composer
 
 Follow this video if you haven't composer on your computer
-`https://getcomposer.org/download/`
+```markdown
+https://getcomposer.org/download/
+```
 
 3. Add PHP to System envirement variables
 
 ## How to clone and install the necessary tools
 
 1. Download the repository and unzip it:  
-`https://github.com/CHERIEF-Dz/Laravel-Portfolio-Generator`
+```markdown
+https://github.com/CHERIEF-Dz/Laravel-Portfolio-Generator
+```
 
 2. Go to the project directory and install the dependencies using the following command:  
-`composer install`
+```markdown
+composer install
+```
 
 3. Open `.env` file and update the database and personal information.
 
 4. Run the migrations using the following command:  
-`php artisan migrate`
+```markdown
+php artisan migrate
+```
 
 5. Open a cmd command line in the directory and switch on the server:
-`php artisan serve`
+```markdown
+php artisan serve
+```
 
 6. Go to `127.0.0.1:8000` to view the results
 
@@ -38,10 +50,14 @@ Follow this video if you haven't composer on your computer
 ## How to generate the static website
 
 1. Open new cmd in the directory and switch on the server:
-`php artisan serve`
+```markdown
+php artisan serve
+```
 
 2. Open other cmd and run the following command to generate the static website:  
-`php artisan generate:static`
+```markdown
+php artisan generate:static
+```
 
 
 3. The static website will be generated in the `static` directory.

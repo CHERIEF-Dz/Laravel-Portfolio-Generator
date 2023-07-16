@@ -72,5 +72,5 @@ Congrats!! Now you can deploy your personal website any where in any webhost.
 - This repository is intended to be used as a starting point for creating your own static website.
 - Feel free to contribute to the project by submitting pull requests or reporting issues & share it with your friends.
 
-## Whatch this vedio to understand how to all of this
+## Whatch this video to understand how to all of this
 [![Explicative Video](http://img.youtube.com/vi/VU_bmMyF6xM/0.jpg)](http://www.youtube.com/watch?v=VU_bmMyF6xM)

@@ -4,11 +4,16 @@ This repository contains a generator that can be used to create a static website
 
 ## Requirements
 
-- Install composer
+1. Install `wampserver` or `XAMPP`
+`https://www.wampserver.com/en/download-wampserver-64bits/`
+
+
+2. Install composer
 
 Follow this video if you haven't composer on your computer
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UsXEdzxCci4" frameborder="0" allowfullscreen></iframe>
+`https://getcomposer.org/download/`
 
+3. Add PHP to System envirement variables
 
 ## How to clone and install the necessary tools
 

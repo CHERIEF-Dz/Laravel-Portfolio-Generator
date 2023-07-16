@@ -73,7 +73,4 @@ Congrats!! Now you can deploy your personal website any where in any webhost.
 - Feel free to contribute to the project by submitting pull requests or reporting issues & share it with your friends.
 
 ## Whatch this vedio to understand how to all of this
-<video src='https://youtu.be/VU_bmMyF6xM' width=180/>
-[![Final video of fixing issues in your code in VS Code]
-(https://img.youtube.com/vi/VU_bmMyF6xM/maxresdefault.jpg)]
-(https://youtu.be/VU_bmMyF6xM)
+[![Explicative Video](http://img.youtube.com/vi/VU_bmMyF6xM/0.jpg)](http://www.youtube.com/watch?v=VU_bmMyF6xM)

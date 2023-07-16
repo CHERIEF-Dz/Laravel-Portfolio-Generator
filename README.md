@@ -46,7 +46,7 @@ Follow this video if you haven't composer on your computer
 
 3. The static website will be generated in the `static` directory.
 
-4. Copy assets and put them in the `static` directory.
+4. In `public`, Copy `assets` and `img` folders and put them in the `static` folder.
 
 Congrats!! Now you can deploy your personal website any where in any webhost.
 

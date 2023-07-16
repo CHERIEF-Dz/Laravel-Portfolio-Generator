@@ -55,3 +55,9 @@ Congrats!! Now you can deploy your personal website any where in any webhost.
 - You should have at least basic knowledge of HTML, CSS to do the customization.
 - This repository is intended to be used as a starting point for creating your own static website.
 - Feel free to contribute to the project by submitting pull requests or reporting issues & share it with your friends.
+
+## Whatch this vedio to understand how to all of this
+<video src='https://youtu.be/VU_bmMyF6xM' width=180/>
+[![Final video of fixing issues in your code in VS Code]
+(https://img.youtube.com/vi/VU_bmMyF6xM/maxresdefault.jpg)]
+(https://youtu.be/VU_bmMyF6xM)

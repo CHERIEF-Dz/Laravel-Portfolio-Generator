@@ -18,8 +18,6 @@ Done
     
 Before:
     - Il me reste les traveaux de web scrapping
-    - Github:
-        - Vérifier les informations dans README.md
-        - Faire une vidéo pour montrer comment faire le téléchargement du référentiel et le dépoiler et comment modifier et finalement comment le mêtre dans un site Web statique sur gitHub ou un autre hébergeur
+    
 Bugs
     - Values of 'select' in forms are not selected automatic in 

@@ -20,7 +20,7 @@
                 </div>
                 <div class="form-group">
                     <label for="categorie">Category</label>
-                    <select name="categorie" value="{{$project->categorie}}" placeholder="Category of project" class="form-control">
+                    <select name="categorie" id="select_0" placeholder="Category of project" class="form-control">
                         <option value="Web"  class="form-control">Web</option>
                         <option value="Mobile" class="form-control">Mobile</option>
                         <option value="Desktop" class="form-control">Desktop</option>
@@ -32,7 +32,7 @@
                     <input type="file" name="image" value="{{$project->image}}" placeholder="Image of project" class="form-control">
                 </div><div class="form-group">
                     <label for="client">Client</label>
-                    <select name="client"  value="{{$project->client}}" placeholder="The Client" class="form-control">
+                    <select name="client" id="select_1" placeholder="The Client" class="form-control">
                         <option value="0" class="form-control">Me</option>
                         @foreach($clients as $client)
                         <option value="{{$client->id}}" class="form-control">{{$client->name}}</option>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="form-group">
                     <label for="is_visible">Is visible</label>
-                    <select name="is_visible"  value="{{$project->is_visible}}" placeholder="Is this project visible" class="form-control">
+                    <select name="is_visible"  id="select_2" placeholder="Is this project visible" class="form-control">
                         <option value="0" class="form-control">Hidden</option>
                         <option value="1" class="form-control">Visible</option>
                     </select>
@@ -71,4 +71,11 @@
     </div>
 </div>
 <br>
+@endsection
+@section('script_content')
+<script>
+    selectElement("select_0","{{$project->categorie}}")
+    selectElement("select_1",{{$project->client}})
+    selectElement("select_2",{{$project->is_visible}})
+</script>
 @endsection

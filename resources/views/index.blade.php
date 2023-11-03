@@ -42,6 +42,7 @@
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
         <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="#certificates" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Certificates</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -52,7 +53,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>CHERIEF Houcine Abdelkader</h1>
-      <p>I'm <span class="typed" data-typed-items="Student, Backend developer , Frontend developer , Fullstack developer, Freelancer"></span></p>
+      <p>I'm <span class="typed" data-typed-items="Backend developer , Frontend developer , Fullstack developer, Freelancer, Data Scientist"></span></p>
       <div class="social-links">
         <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>-->
         <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
@@ -80,7 +81,7 @@
           <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Computer Science Engineer.</h3>
             <p class="fst-italic">
-              CHERIEF Houcine Abdelakder, Computer and Software Systems Engineer. Passionate about development for 5 years, now I worked on projects that allowed me to gain some experience in the field. I like being able to explore new adventures, experience and deepen my knowledge in the field.
+              CHERIEF Houcine Abdelakder, Computer and Software Systems Engineer. Passionate about development for 5 years, I worked on projects that allowed me to gain some experience in the field. I like being able to explore new adventures, experience and deepen my knowledge in the field.
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -142,8 +143,8 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="count-box">
               <i class="bi bi-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="{{$awards}}" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Awards</p>
+              <span data-purecounter-start="0" data-purecounter-end="{{$certeficates_number}}" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Certeficates</p>
             </div>
           </div>
 
@@ -387,6 +388,37 @@
           <div class="swiper-pagination"></div>
         </div>
 
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Certificates Section ======= -->
+    <section id="certificates" class="certificates section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Certificates</h2>
+        </div>
+        <div data-aos="fade-up">
+          <div class="row">
+            @foreach($liste_certificates as $certificate)
+              @if($certificate->is_visible)
+                <div class="col-sm-4 mb-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">{{$certificate->name}}</h4>
+                      <p class="card-text">
+                        By <i><b>{{$certificate->organisation}}</b></i>, {{(new DateTime($certificate->date))->format('F jS Y')}}<br/>
+                        @foreach(explode(";",$certificate->skills) as $skill)
+                          <span class="badge bg-success">{{$skill}}</span>
+                        @endforeach
+                      </p>
+                      <a href="{{$certificate->url}}" class="btn btn-primary">View this certificate</a>
+                    </div>
+                  </div>
+                </div>
+              @endif
+            @endforeach
+          </div>
+        </div>
       </div>
     </section><!-- End Testimonials Section -->
 

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\CertificatController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ExperianceController;
@@ -35,4 +36,5 @@ Route::resource("/admin/project",ProjectController::class);
 Route::resource("/admin/contact",ContactController::class);
 Route::resource("/admin/client",ClientController::class);
 Route::resource("/admin/setting",SettingController::class);
+Route::resource("/admin/certificat",CertificatController::class);
 

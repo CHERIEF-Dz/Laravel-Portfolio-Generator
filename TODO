@@ -15,9 +15,12 @@ Done
     - Autocreating of project detail
     - Facts information
     - Génération de version statique pour l'héberger facilement: >php artisan generate:static
+    - Add new controller for certifications
     
 Before:
     - Il me reste les traveaux de web scrapping
     
-Bugs
-    - Values of 'select' in forms are not selected automatic in 
+Bugs:
+
+To Do:
+    - Add multiple photos for the project

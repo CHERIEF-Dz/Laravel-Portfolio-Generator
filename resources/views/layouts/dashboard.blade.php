@@ -124,7 +124,7 @@
           </li>
         </ul>
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
-          <span>Professional</span>
+          <span>Educational</span>
         </h6>
         <ul class="nav flex-column mb-2">
           <li class="nav-item">
@@ -134,21 +134,32 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{{url('/admin/certificat')}}">
+              <span data-feather="award" class="align-text-bottom"></span>
+              Certificates
+            </a>
+          </li>
+        </ul>
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted text-uppercase">
+          <span>Professional</span>
+        </h6>
+        <ul class="nav flex-column mb-2">
+          <li class="nav-item">
             <a class="nav-link" href="{{url('/admin/experience')}}">
               <span data-feather="clock" class="align-text-bottom"></span>
               Experiences
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{url('/admin/skill')}}">
-              <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-              Skills
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="{{url('/admin/project')}}">
               <span data-feather="check" class="align-text-bottom"></span>
               Projects
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url('/admin/skill')}}">
+              <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+              Skills
             </a>
           </li>
           <li class="nav-item">
@@ -183,6 +194,12 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
     <script src="{{url('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{url('assets/js/dashboard.js')}}"></script>
+    <script>
+      function selectElement(id, valueToSelect) {
+        let element = document.getElementById(id);
+        element.value = valueToSelect;
+      }
+    </script>
     @yield("script_content")
   </body>
 </html>

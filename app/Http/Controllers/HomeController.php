@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 use App\Models\About;
+use App\Models\Certificat;
 use App\Models\Client;
 use App\Models\Contact;
 use App\Models\Formation;
@@ -37,14 +38,14 @@ class HomeController extends Controller
         $experience_number= Experiance::count();
         $skill_number= Skill::count();
         $project_number= Project::count();
-        $awards=  Project::sum('awards');
+        $certeficate_number= Certificat::count();
         return view('home',[
             "client_number"=>$client_number,
             "formation_number"=>$formation_number,
             "experience_number"=>$experience_number,
             "skill_number"=>$skill_number,
             "project_number"=>$project_number,
-            'awards'=>$awards
+            'certeficate_number'=>$certeficate_number
         ]);
     }
 
@@ -60,7 +61,7 @@ class HomeController extends Controller
         $liste_abouts1= $liste_abouts->chunk($liste_abouts->count()/2)[0];
         $liste_abouts2= $liste_abouts->chunk($liste_abouts->count()/2)[1];
         
-        $liste_skills= Skill::all();
+        $liste_skills= DB::table('skills')->where('value', '>=', 50)->orderBy('value', 'desc')->get();
         $liste_skills1= $liste_skills->chunk($liste_skills->count()/2)[0];
         $liste_skills2= $liste_skills->chunk($liste_skills->count()/2)[1];
 
@@ -69,7 +70,9 @@ class HomeController extends Controller
         $liste_projects= DB::table('projects')->where('is_visible', '<>', 0)->get();
 
         $hours_support= Project::sum('hours_support');
-        $awards=  Project::sum('awards');
+
+        $certeficates_number= Certificat::count();
+        $liste_certificates= Certificat::orderBy('date', 'desc')->get();
 
         return view('index',
             ['formations'=>$liste_formations,
@@ -82,7 +85,8 @@ class HomeController extends Controller
             'contacts'=>$liste_contacts,
             'projects'=>$liste_projects,
             'hours_support'=>$hours_support,
-            'awards'=>$awards
+            'certeficates_number'=>$certeficates_number,
+            'liste_certificates'=>$liste_certificates
         ]);
     }
 }

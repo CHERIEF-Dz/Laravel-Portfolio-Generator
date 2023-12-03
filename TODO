@@ -17,10 +17,8 @@ Done
     - Génération de version statique pour l'héberger facilement: >php artisan generate:static
     - Add new controller for certifications
     
-Before:
-    - Il me reste les traveaux de web scrapping
-    
 Bugs:
-
+    None
+    
 To Do:
     - Add multiple photos for the project

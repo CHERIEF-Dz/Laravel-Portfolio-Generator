@@ -70,7 +70,7 @@
                 <li><strong>Project date</strong>: {{$project->date}}</li>
                 <li><strong>Hours of support</strong>: {{$project->hours_support}}</li>
                 <li><strong>Awards</strong>: {{$project->awards}}</li>
-                <li><strong>Project URL</strong>: <a href="{{$project->url}}">{{$project->url}}</a></li>
+                <li><strong>Project URL</strong>: <a target="_blank" href="{{$project->url}}">{{$project->url}}</a></li>
               </ul>
             </div>
             <div class="portfolio-description">

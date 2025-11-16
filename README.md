@@ -12,12 +12,12 @@ https://www.wampserver.com/en/download-wampserver-64bits/
 
 2. Install composer
 
-Follow this video if you haven't composer on your computer
+Follow this video if you haven't Composer on your computer
 ```markdown
 https://getcomposer.org/download/
 ```
 
-3. Add PHP to System envirement variables
+3. Add PHP to System environment variables
 
 ## How to clone and install the necessary tools
 
@@ -38,23 +38,23 @@ composer install
 php artisan migrate
 ```
 
-5. Open a cmd command line in the directory and switch on the server:
+5. Open a command line in the directory and switch on the server:
 ```markdown
 php artisan serve
 ```
 
 6. Go to `127.0.0.1:8000` to view the results
 
-7. You can add, remove and update the elements of the index by going to `127.0.0.1:8000/admin`
+7. You can add, remove, and update the elements of the index by going to `127.0.0.1:8000/admin`
 
 ## How to generate the static website
 
-1. Open new cmd in the directory and switch on the server:
+1. Open a new CMD in the directory and switch on the server:
 ```markdown
 php artisan serve
 ```
 
-2. Open other cmd and run the following command to generate the static website:  
+2. Open another CMD and run the following command to generate the static website:  
 ```markdown
 php artisan generate:static
 ```
@@ -62,9 +62,9 @@ php artisan generate:static
 
 3. The static website will be generated in the `static` directory.
 
-4. In `public`, Copy `assets` and `img` folders and put them in the `static` folder.
+4. In `public`, copy `assets` and `img` folders and put them in the `static` folder.
 
-Congrats!! Now you can deploy your personal website any where in any webhost.
+Congrats!! Now you can deploy your personal website anywhere on any web host.
 
 ## Remarks
 
@@ -72,5 +72,5 @@ Congrats!! Now you can deploy your personal website any where in any webhost.
 - This repository is intended to be used as a starting point for creating your own static website.
 - Feel free to contribute to the project by submitting pull requests or reporting issues & share it with your friends.
 
-## Whatch this video to understand how to all of this
+## Watch this video to understand how to do all of this
 [![Explicative Video](http://img.youtube.com/vi/VU_bmMyF6xM/0.jpg)](http://www.youtube.com/watch?v=VU_bmMyF6xM)
